@@ -4,7 +4,6 @@ const port = 3000;
 
 // Serve static files from "public" directory
 app.use(express.static('public'));
-app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
